@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@import "tailwindcss";
+
+@font-face {
+  font-family: gilroy;
+  src: url(./assets/Font/Gilroy-Medium.ttf);
+}
+
+@font-face {
+  font-family: gilsem;
+  src: url(./assets/Font/Gilroy-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: gilit;
+  src: url(./assets/Font/Mazius-Extraitalic.otf);
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+h1,
+p,
+button,
+svg,
+img {
+  user-select: none;
+  cursor: pointer;
+}
+
+/* ANCHOR HOVER EFFECT */
+
+.Hover-text {
+  overflow: hidden;
+}
+
+.Move {
+  transition: all ease 0.3s;
+}
+
+.Hover-text:hover .Move {
+  transform: translateY(-50%);
+  color: #145fcf;
+}
+
+@media screen and (max-width: 768px) {
+  .stack_body::after {
+    top: 95%;
+  }
+}
+
+/* HOLDER */
+.holder {
+  position: absolute;
+  pointer-events: none;
+  z-index: 99;
+}
+
+/* Contact */
+
+.shaders:hover .shaders_p {
+  color: white !important;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #145fcf;
+  border-radius: 10px;
+}
