@@ -125,7 +125,7 @@ function Project() {
       className="min-h-screen w-full bg-[#161717] text-white pb-[30vw] lg:py-[5vw] px-[5vw]"
     >
       {/* TITLE AREA */}
-      <div className="min-h-[40vh] lg:h-full pl-[0vw] lg:pl-[8vw] relative flex items-center lg:overflow-hidden">
+      <div className="min-h-[40vh] lg:h-full pl-0 lg:pl-[8vw] relative flex items-center lg:overflow-hidden">
         {/* sm */}
         <h1
           ref={(el) => (workRefs.current[2] = el)}
@@ -283,7 +283,7 @@ function Project() {
                 >
                   <div className="h-[4vh] w-[3.5vh] border-2 border-white rounded-full"></div>
                   <div className="bg-white rounded-[2.5vw] px-[2vw] py-[.5vw] inline-block">
-                    <p className="font-[gilroy] text-[.8vw] uppercase">
+                    <p className="font-[gilroy] text-[.8vw] uppercase text-black">
                       NEXT JS
                     </p>
                   </div>
